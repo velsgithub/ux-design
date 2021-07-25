@@ -15,7 +15,7 @@ const InteractionHistory = () => {
             {
                 data.map((d, i) => (
                     <tr key={i}>
-                        <td className='p-1'><i className={`fa fa-${d.icon}`}></i></td>
+                        <td className='p-1'><i style={{color: 'var(--base-color3)'}} className={`fa fa-${d.icon}`}></i></td>
                         <td className='p-1'>{d.label}</td>
                         <td className='p-1 text-center'>{d.date}</td>
                     </tr>

@@ -33,7 +33,7 @@ const Header = () => {
                         <img src={`${process.env.PUBLIC_URL}/images/chat.svg`} style={{ width: 32 }} alt='chat' />
                     </div>
                     <div className='p-col-1 p-0 text-center'>
-                        <img src={`${process.env.PUBLIC_URL}/images/clock.svg`} style={{ width: 20 }} alt='clock' />
+                        <img src={`${process.env.PUBLIC_URL}/images/clock.svg`} style={{ width: 32 }} alt='clock' />
                     </div>
                     <div className='p-col-2 p-0 text-center'>
                         <div className='bg-base2 align-center'>
