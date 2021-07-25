@@ -12,7 +12,7 @@ const CustomerSupport = props => {
                 <span>044 234232423</span>
             </div>
             <div className="p-col-4">
-                <Button label="00:03::45" className="p-button-raised p-button-rounded" />
+                <Button label="00:03:45" className="p-button-raised p-button-rounded" />
             </div>
         </div>
         <Title label='Customer support' />

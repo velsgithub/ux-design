@@ -13,11 +13,11 @@ const Schedule = () => {
         </div>
         <div className='border-1 align-between p-1'>
             <div className='align-middle'>
-                <i className="fa fa-calendar-alt">&nbsp;</i>
+                <i className="fa fa-calendar-minus-o">&nbsp;</i>
                 Select Date
             </div>
             <div className='align-middle'>
-                <i className="fa fa-clock">&nbsp;</i>
+                <i className="fa fa-clock-o">&nbsp;</i>
                 Select Date
             </div>
         </div>
@@ -25,7 +25,7 @@ const Schedule = () => {
             {
                 getScheduleCallbacks().map((sc, i) => <div key={i} className='p-grid'>
                     <div className='p-col-1'>
-                        <i className="fa fa-calendar-alt">&nbsp;</i>
+                        <i className="fa fa-calendar-minus-o">&nbsp;</i>
                     </div>
                     <div className='p-col-4'>
                         <span>{sc.date}</span>
@@ -34,10 +34,10 @@ const Schedule = () => {
                         <span>{sc.time}</span>
                     </div>
                     <div className='p-col-1'>
-                        <i className="fa fa-calendar-alt">&nbsp;</i>
+                        <i className="fa fa-pencil">&nbsp;</i>
                     </div>
                     <div className='p-col-1'>
-                        <i className="fa fa-calendar-alt">&nbsp;</i>
+                        <i className="fa fa-trash-o">&nbsp;</i>
                     </div>
                 </div>)
             }

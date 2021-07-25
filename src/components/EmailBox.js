@@ -1,3 +1,4 @@
+import { Button } from 'primereact/button';
 import { InputText } from 'primereact/inputtext';
 import { useState } from 'react';
 
@@ -13,7 +14,9 @@ const EmailBox = () => {
             </div>
         </div>
         <InputText value={value} placeholder='Write on email...' onChange={(e) => setValue(e.target.value)} />
-
+        <div className='pt-2 text-center'>
+        <Button label="Compose" className="p-button-raised p-button-rounded" style={{width: '12rem'}} />
+        </div>
     </>
 }
 
