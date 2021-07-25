@@ -5,13 +5,13 @@ const Schedule = () => {
     return <>
         <div className='p-grid' style={{ alignItems: 'center' }}>
             <div className="p-col-2">
-                <img style={{ width: 32 }} alt="Card" src={`${process.env.PUBLIC_URL}/images/headset.png`} />
+                <img style={{ width: 32 }} alt="Card" src={`${process.env.PUBLIC_URL}/images/clock.svg`} />
             </div>
             <div className="p-col-6 p-0">
                 <p className='font-weight-bold'>Schedule Callback</p>
             </div>
         </div>
-        <div className='border-1 align-between p-1'>
+        <div className='border-1 align-between p-1 mb-min'>
             <div className='align-middle'>
                 <i className="fa fa-calendar-minus-o">&nbsp;</i>
                 Select Date
@@ -23,7 +23,7 @@ const Schedule = () => {
         </div>
         <div>
             {
-                getScheduleCallbacks().map((sc, i) => <div key={i} className='p-grid'>
+                getScheduleCallbacks().map((sc, i) => <div key={i} className='p-grid font-weight-bold'>
                     <div className='p-col-1'>
                         <i className="fa fa-calendar-minus-o">&nbsp;</i>
                     </div>

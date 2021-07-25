@@ -3,8 +3,8 @@ import { getPersonDetails } from '../services/person';
 
 const LabelSection = props => {
     return <div className='p-grid'>
-        <div className="p-col-4">{props.label}</div>
-        <div className="p-col-8">{props.value}</div>
+        <div className="p-col-4" style={{color: '#939fb5'}}>{props.label}</div>
+        <div className="p-col-8 mb-1 font-weight-bold">{props.value}</div>
     </div>
 }
 

@@ -3,21 +3,36 @@
 @import "~font-awesome/scss/font-awesome.scss";
 @import "primeflex/primeflex.css";
 
+:root {
+    --base-color1: #1badc3;
+    --base-color2: rgb(249, 249, 250);
+    --base-color3: #1071ba;
+}
+
+body {
+    font-family: "Roboto" !important;
+}
+
 .m-0 {
     margin: 0 !important;
 }
 .p-1 {
     padding: 1rem !important;
 }
-.p-0 {
+.p-0,
+.p-0-card-body > .p-card-body {
     padding: 0 !important;
 }
 .p-min,
 .pl-min {
     padding: 0.5rem !important;
 }
-.p-0-content  .p-card-content {
+.p-0-content .p-card-content {
     padding: 0 !important;
+}
+.py-1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 p,
 .mb-min {
@@ -27,7 +42,7 @@ p,
 .font-weight-bold {
     font-weight: bold;
 }
-.border-1{
+.border-1 {
     border: 1px solid #ccc;
 }
 .align-between {
@@ -35,9 +50,19 @@ p,
     align-items: center;
     justify-content: space-between;
 }
+.align-end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.align-center {
+    display: flex;
+    align-items: center;
+}
 .align-middle {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .d-flex {
     display: flex !important;
@@ -61,9 +86,47 @@ p,
 .mb-2 {
     margin-bottom: 2rem;
 }
+.mb-1 {
+    margin-bottom: 1rem;
+}
 .mt-1 {
     margin-top: 1rem;
 }
-.border-top{
+.mt-2 {
+    margin-top: 2rem;
+}
+.border-top {
     border-top: 1px solid #ccc;
+}
+.border-bottom {
+    border-bottom: 1px solid #ccc;
+}
+.bg-white {
+    background-color: #ffffff;
+}
+.bg-base1,
+.bg-base1:hover {
+    background-color: var(--base-color1) !important;
+    color: #fff !important;
+}
+.bg-base2,
+.bg-base2:hover  {
+    background-color: var(--base-color2) !important;
+    color: #000 !important;
+}
+.border-none {
+    border: none;
+}
+.bg-base3 {
+    background-color: var(--base-color3);
+}
+.p-progressbar {
+    height: 1rem;
+    border-radius: 12px;
+}
+.p-card {
+    border-radius: 13px;
+}
+tr:nth-child(even) {
+    background-color: #f8fbfe;
 }

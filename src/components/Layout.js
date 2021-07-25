@@ -1,33 +1,19 @@
-import ChatBox from "./ChatBox";
-import { Card } from 'primereact/card';
-import CustomerSupport from "./CustomerSupport";
-import EmailBox from "./EmailBox";
-import Schedule from "./Schedule";
-import PersonDetails from "./PersonDetails";
-import ProductDetails from "./ProductDetails";
-import InteractionHistory from "./InteractionHistory";
+import Header from "./Header";
+import Home from "./Home";
+import Sidebar from "./Sidebar";
 
 const Layout = () => {
-    const components = [
-        { component: CustomerSupport, colDiv: 3 },
-        { component: EmailBox, colDiv: 3 },
-        { component: ChatBox, colDiv: 3 },
-        { component: Schedule, colDiv: 3 },
-        { component: PersonDetails, colDiv: 4 },
-        { component: ProductDetails, colDiv: 4 },
-        { component: InteractionHistory, colDiv: 4 }
-    ];
-    return <>
-        <div className="p-grid m-0">
-            {
-                components.map((c, i) => <div key={i} className={`p-col-${c.colDiv} d-flex mb-2`}>
-                    <Card className='p-0-content w-100'>
-                        <c.component className='w-100' />
-                    </Card>
-                </div>)
-            }
+    return <div className='p-grid m-0'>
+        <div className='p-col-1 p-0 d-flex' style={{ width: '4%' }}>
+            <Sidebar />
         </div>
-    </>
+        <div className='p-col-11 p-0' style={{ width: '96%' }}>
+            <Header />
+            <div className='p-1 bg-base2'>
+                <Home />
+            </div>
+        </div>
+    </div>
 }
 
 export default Layout;

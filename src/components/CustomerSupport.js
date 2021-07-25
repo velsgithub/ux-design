@@ -1,7 +1,8 @@
 import { Button } from 'primereact/button';
-import Title from './Title';
+import { StyledH4 } from './Title';
 
 const CustomerSupport = props => {
+    const icons = ['pencil', 'pencil', 'pencil', 'pencil', 'pencil', 'pencil']
     return <>
         <div className='p-grid' style={{ alignItems: 'center' }}>
             <div className="p-col-2">
@@ -12,10 +13,18 @@ const CustomerSupport = props => {
                 <span>044 234232423</span>
             </div>
             <div className="p-col-4">
-                <Button label="00:03:45" className="p-button-raised p-button-rounded" />
+                <Button label="00:03:45" className="bg-base3 p-button-raised p-button-rounded" />
             </div>
         </div>
-        <Title label='Customer support' />
+        <StyledH4 label='Customer support' color='#1badc3' />
+        <div className='p-grid m-0'>
+            {
+                icons.map((icon, i) => <div key={i} className='p-col-4'>
+                    <Button style={{ width: '5rem' }} label={<i className={`fa fa-${icon}`}></i>}
+                        className="p-col-4 p-button-raised p-button-rounded bg-base2 border-none" />
+                </div>)
+            }
+        </div>
     </>
 }
 
