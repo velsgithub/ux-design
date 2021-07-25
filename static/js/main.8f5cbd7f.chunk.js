@@ -1,2 +1,0 @@
-(this["webpackJsonpux-design"]=this["webpackJsonpux-design"]||[]).push([[0],{11:function(n,t,e){"use strict";e.r(t);e(1);var s=e(3),c=e.n(s),i=(e(8),e(9),e(0));var u=function(){return Object(i.jsx)("div",{})};c.a.render(Object(i.jsx)(u,{}),document.getElementById("root"))},8:function(n,t,e){},9:function(n,t,e){}},[[11,1,2]]]);
-//# sourceMappingURL=main.8f5cbd7f.chunk.js.map
